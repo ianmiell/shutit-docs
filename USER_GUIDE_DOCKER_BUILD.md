@@ -2,20 +2,25 @@
 
 ## Design goals
 
-ShutIt was built originally to facilitate the deployment of complex Docker containers, so that developers can quickly prototype builds in a structured and flexible way with as shallow a learning curve as possible.
+ShutIt was built originally to facilitate the deployment of complex Docker
+containers, so that developers can quickly prototype builds in a structured and
+flexible way with as shallow a learning curve as possible.
 
-A ShutIt build is a programmable way of managing builds by modelling shell interactions.
-
+ShutIt build is a programmable way of managing builds by modelling shell
+interactions.
 
 ## Key concepts
 	
 ### Build
 
-A ShutIt build consists of all the modules available going through the ShutIt Build lifecycle. This results in a container in a state from which it can be tagged, saved, exported, and/or pushed depending on your configuration.
+A ShutIt build consists of all the modules available going through the ShutIt
+Build lifecycle. This results in a container in a state from which it can be
+tagged, saved, exported, and/or pushed depending on your configuration.
 
 ### Module
 
-A ShutIt module is a directory containing the configuration for the setup of a discrete unit of configuration.
+A ShutIt module is a directory containing the configuration for the setup of a
+discrete unit of configuration.
 
 This can be as simple as an apt-get install, a sequence of steps to get your package configured correctly, or a series of steps to set up networking for the a build, or anything else you deem useful to encapsulate as part of your build.
 

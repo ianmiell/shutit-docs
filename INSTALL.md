@@ -6,6 +6,7 @@
 pip install shutit
 ```
 
+
 ## Configuration
 
 To configure for your purposes, see: [CONFIGURATION]('https://github.com/ianmiell/shutit/blob/master/CONFIGURATION.md')
@@ -14,6 +15,17 @@ To configure for your purposes, see: [CONFIGURATION]('https://github.com/ianmiel
 
 
 # Other install methods
+
+## Installing with virtualenv
+
+```sh
+git clone --recursive https://github.com/ianmiell/shutit
+cd shutit
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+./shutit
+```
 
 ## Installing using Docker
 
